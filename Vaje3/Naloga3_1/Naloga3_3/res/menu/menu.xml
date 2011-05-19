@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <item android:id="@+id/nova" android:icon="@android:drawable/ic_menu_rotate" android:title="Nova igra" ></item>
+  <item android:id="@+id/rez" android:icon="@android:drawable/ic_menu_info_details" android:title="Rezultati" ></item>
+  <item android:id="@+id/izh" android:icon="@android:drawable/ic_menu_close_clear_cancel" android:title="Izhod" ></item>
+  <item android:id="@+id/nast" android:icon="@android:drawable/ic_menu_preferences" android:title="Nastavitve"></item>
+</menu>

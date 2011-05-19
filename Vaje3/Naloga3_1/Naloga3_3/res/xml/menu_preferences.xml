@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- Display settings -->
+<PreferenceCategory android:title="Nastavitve igre ugibanja">
+		<ListPreference android:key="Tezavnost" android:title="Težavnost"
+			android:summary="Težavnost igre" android:entries="@array/min_log_opis"
+			android:entryValues="@array/min_log_distance" android:dialogTitle="Izberi težavnost"
+			android:defaultValue="10" />
+		<EditTextPreference android:key="PREF_IME"
+			android:title="Ime igralca" android:summary="Ime" android:dialogTitle="Ime igralca" />
+			
+</PreferenceCategory>
+</PreferenceScreen>

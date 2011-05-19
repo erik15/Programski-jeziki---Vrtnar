@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, asa!</string>
+    <string name="app_name">Vrtnar</string>
+    <color name="zelena">#006600</color>
+    <color name="red">#C11B17</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:src="@drawable/ozadje"
+    android:background="@drawable/ozadje"
+    >
+   
+    <LinearLayout 
+    android:id="@+id/linearLayout1" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" android:gravity="center">
+        <TextView 
+        android:textColor="@color/zelena" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/textView1" 
+        android:textStyle="bold"
+        android:textSize="25px" android:typeface="sans" android:background="@drawable/vrtnar"></TextView>
+    </LinearLayout>
+    
+    <LinearLayout 
+    android:id="@+id/linearLayout2" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" android:gravity="center">
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Vnesi sajenje..." android:id="@+id/edit_vnos"></EditText>
+    </LinearLayout>
+    <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:id="@+id/button1" android:textColor="@color/zelena" android:text="Določi dan"></Button>
+    
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="160px">
+        <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena" android:text="Shrani nastavitve" android:id="@+id/btn_shrani"></Button>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout7" android:layout_width="wrap_content" android:layout_height="match_parent"></LinearLayout>
+</LinearLayout>

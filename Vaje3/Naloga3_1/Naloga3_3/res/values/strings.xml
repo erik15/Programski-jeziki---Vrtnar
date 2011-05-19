@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GlavnoOkno!</string>
+    <string name="app_name">Naloga2_2</string>
+    <color name="Crna">#000000</color>
+    <color name="Oranžna">#BF6B11</color>
+</resources>
