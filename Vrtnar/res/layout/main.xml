@@ -25,7 +25,7 @@
     android:layout_width="match_parent" 
     android:layout_height="wrap_content" android:gravity="center">
     </LinearLayout>
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:id="@+id/vreme_slika"></ImageView>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:id="@+id/vreme_slika" android:layout_gravity="center" android:layout_marginBottom="10px"></ImageView>
     <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena" android:text="Dodaj sajenje" android:id="@+id/btn_dodaj"></Button>
     
     <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content"></LinearLayout>
