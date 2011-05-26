@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Dnevi sajenja">
+		<RingtonePreference android:title="Ringtone Preference"
+			android:key="Ringtone" android:dependency="EnablePreferences"
+			android:summary="Select Ringtone" android:ringtoneType="all" />
+	</PreferenceCategory>
+</PreferenceScreen>

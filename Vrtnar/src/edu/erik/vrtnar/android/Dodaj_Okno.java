@@ -3,6 +3,8 @@ package edu.erik.vrtnar.android;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,6 +15,7 @@ public class Dodaj_Okno extends Activity implements OnClickListener {
 
 	Button shrani;
 	Button dnevi_sajenja;
+	Menu meni;
 	
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +31,14 @@ public class Dodaj_Okno extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+    @Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		meni = menu;
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.menu, meni);
+		return true;
 	}
 	
     @Override

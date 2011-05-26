@@ -12,7 +12,6 @@ import android.preference.Preference.OnPreferenceClickListener;
 public class MenuPreferences extends PreferenceActivity {
 	public static final String TAG = "MenuPreferences";
 	SharedPreferences prefs;
-	//ApplicationExample app;
 	public static final String PREF_TEZAVNOST = "Tezavnost";
 	public static final String PREF_IME = "PREF_IME";
 	
@@ -20,17 +19,9 @@ public class MenuPreferences extends PreferenceActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//app = (ApplicationExample) this.getApplication();
-		//addPreferencesFromResource(R.xml.menu_preferences);     
+		addPreferencesFromResource(R.xml.menu_preferences);     
 	}
 	
 	
-	@Override
-	public void onPause() {
-		super.onPause();
-		//SharedPreferences settings =  PreferenceManager.getDefaultSharedPreferences(app); 
-		//app.mojStevec.setTezavnost(Integer.parseInt(settings.getString(PREF_TEZAVNOST, "10")));
-		//app.mojStevec.setName(settings.getString(PREF_IME, "Erik")); 	
-	}
 	 
 }
