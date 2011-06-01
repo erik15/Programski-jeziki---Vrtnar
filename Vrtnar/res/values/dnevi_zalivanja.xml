@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="dnevi_zalivanja">
+		<item>Ponedeljek</item>
+		<item>Torek</item>
+		<item>Sreda</item>
+		<item>Četrtek</item>
+		<item>Petek</item>
+		<item>Sobota</item>
+		<item>Nedelja</item>
+	</string-array>
+	<string-array name="dnevi_zalivanaValues">
+		<item>11</item>
+		<item>22</item>
+		<item>33</item>
+		<item>44</item>
+		<item>55</item>
+		<item>66</item>
+		<item>77</item>
+	</string-array>
+</resources>

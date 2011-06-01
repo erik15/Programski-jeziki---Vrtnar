@@ -5,6 +5,7 @@
 	<color name="zelena">#006600</color>
 	<color name="red">#C11B17</color>
 	<string name="dnevi_sajenja">Dnevi v tednu</string>
+	<string name="dnevi_zalivanja">Dnevi v tednu</string>
 	<string name="Ponedeljek">Ponedeljek</string>
 	<string name="Torek">Torek</string>
 	<string name="Sreda">Sreda</string>

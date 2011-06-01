@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:src="@drawable/ozadje"
+	android:background="@drawable/ozadje" android:layout_gravity="bottom">
+
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:gravity="center">
+		<TextView android:textColor="@color/zelena"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/textView1" android:textStyle="bold"
+			android:textSize="25px" android:typeface="sans" android:background="@drawable/vrtnar"></TextView>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:gravity="center">
+	</LinearLayout>
+	<CheckBox android:textStyle="bold" android:textColor="@color/zelena"
+		android:text="@string/Ponedeljek" android:paddingLeft="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/gumb_dan" android:textSize="13px" android:id="@+id/cb_dzalivanja_pon"></CheckBox>
+	<CheckBox android:textStyle="bold" android:textColor="@color/zelena"
+		android:text="@string/Torek" android:paddingLeft="40dp" android:layout_gravity="bottom" android:textSize="13px" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/gumb_dan" android:id="@+id/cb_dzalivanja_tor"></CheckBox>
+	<CheckBox android:layout_gravity="bottom" android:paddingLeft="40dp" android:textStyle="bold" android:textColor="@color/zelena" android:text="@string/Sreda" android:textSize="13px" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/gumb_dan" android:id="@+id/cb_dzalivanja_sre"></CheckBox>
+	<CheckBox android:layout_gravity="bottom" android:paddingLeft="40dp" android:textStyle="bold" android:textColor="@color/zelena" android:text="@string/Četrtek" android:textSize="13px" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/gumb_dan" android:id="@+id/cb_dzalivanja_cet"></CheckBox>
+	<CheckBox android:layout_gravity="bottom" android:paddingLeft="40dp" android:textStyle="bold" android:textColor="@color/zelena" android:text="@string/Petek" android:textSize="13px" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/gumb_dan" android:id="@+id/cb_dzalivanja_pet"></CheckBox>
+	<CheckBox android:layout_gravity="bottom" android:paddingLeft="40dp" android:textStyle="bold" android:textColor="@color/zelena" android:text="@string/Sobota" android:textSize="13px" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/gumb_dan" android:id="@+id/cb_dzalivanja_sob"></CheckBox>
+	<CheckBox android:layout_gravity="bottom" android:paddingLeft="40dp" android:textStyle="bold" android:textColor="@color/zelena" android:text="@string/Nedelja" android:textSize="13px" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/gumb_dan" android:id="@+id/cb_dzalivanja_ned"></CheckBox>
+
+	<LinearLayout android:id="@+id/linearLayout3"
+		android:layout_width="match_parent" android:layout_gravity="bottom" android:gravity="bottom" android:layout_height="fill_parent">
+		<Button android:background="@drawable/gumb"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena"
+			android:text="Shrani nastavitve" android:layout_gravity="bottom" android:id="@+id/btn_shrani_zalivanje"></Button>
+	</LinearLayout>
+</LinearLayout>
