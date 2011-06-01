@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, asa!</string>
-    <string name="app_name">Vrtnar</string>
-    <color name="zelena">#006600</color>
-    <color name="red">#C11B17</color>
+	<string name="hello">Hello World, asa!</string>
+	<string name="app_name">Vrtnar</string>
+	<color name="zelena">#006600</color>
+	<color name="red">#C11B17</color>
+	<string name="dnevi_sajenja">Dnevi v tednu</string>
+	<string name="Ponedeljek">Ponedeljek</string>
+	<string name="Torek">Torek</string>
+	<string name="Sreda">Sreda</string>
+	<string name="Četrtek">Četrtek</string>
+	<string name="Petek">Petek</string>
+	<string name="Sobota">Sobota</string>
+	<string name="Nedelja">Nedelja</string>
 </resources>
