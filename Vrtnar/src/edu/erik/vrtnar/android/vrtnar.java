@@ -26,6 +26,7 @@ public class vrtnar extends Activity implements OnClickListener {
 	private static final int OPEN_DNEVI_ZALIVANJA = 2;
 	
 	
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -56,7 +57,7 @@ public class vrtnar extends Activity implements OnClickListener {
 		}
 	}
 	
-//ko kliknemo se nam odpre novo okno za dodajanje sajenja, hkrat pa doloËamo lahko dneve zalivanja
+//ko kliknemo se nam odpre novo okno za dodajanje sajenja, hkrat pa doloƒçamo lahko dneve zalivanja
 	@Override
 	public void onClick(View arg0) {
 
@@ -65,9 +66,11 @@ public class vrtnar extends Activity implements OnClickListener {
 			//this.startActivity(moj);
 			this.startActivityForResult(moj, TEST_START_ACTIVITY_ID);
 		}
+		if (arg0.getId()== R.id.btn_dzalivanja ){
 		Intent i = new Intent();
 		i.setClass(this, DneviTeden.class);
 		startActivityForResult(i, OPEN_DNEVI_ZALIVANJA);
+		}
 	}
 	
 //izpis za izbran dan ko kliknemo shrani TOAST
@@ -86,7 +89,7 @@ public class vrtnar extends Activity implements OnClickListener {
 					 izbrani +="SRE "; 
 				 }
 				 if (data.getBooleanExtra(DneviZalivanja.zCET, false)) { //neki naredis
-					 izbrani +="»ET"; 
+					 izbrani +="ƒåET"; 
 				 }
 				 if (data.getBooleanExtra(DneviZalivanja.zPET, false)) { //neki naredis
 					 izbrani +="PET "; 
@@ -111,7 +114,7 @@ public class vrtnar extends Activity implements OnClickListener {
 		return true;
 	}
 
-//odpre se nam novo okno za doloËanje dni zalivanja
+//odpre se nam novo okno za doloƒçanje dni zalivanja
    @Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {			

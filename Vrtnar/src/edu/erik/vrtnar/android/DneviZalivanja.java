@@ -27,10 +27,8 @@ public class DneviZalivanja extends Activity implements OnClickListener {
 	CheckBox cbPet;
 	CheckBox cbSob;
 	CheckBox cbNed;
-	
-	
+
 	Button shrani_zalivanje;
-	Button dnevi_zalivanja;
 	Menu meni;
 	
 	public void onCreate(Bundle savedInstanceState) {

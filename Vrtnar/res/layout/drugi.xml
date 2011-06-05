@@ -29,7 +29,7 @@
     <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena" android:text="Določi dan" android:id="@+id/btn_dsajenja"></Button>
     
     <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="160px">
-        <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena" android:text="Shrani nastavitve" android:id="@+id/btn_shrani"></Button>
+        <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena" android:text="Shrani nastavitve" android:id="@+id/btn_shrani_sajenje"></Button>
     </LinearLayout>
     <LinearLayout android:id="@+id/linearLayout7" android:layout_width="wrap_content" android:layout_height="match_parent"></LinearLayout>
 </LinearLayout>

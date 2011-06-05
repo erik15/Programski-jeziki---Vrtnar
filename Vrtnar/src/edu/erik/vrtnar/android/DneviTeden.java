@@ -27,10 +27,7 @@ public class DneviTeden extends Activity implements OnClickListener {
 	CheckBox cbPet;
 	CheckBox cbSob;
 	CheckBox cbNed;
-	
-	
 	Button shrani;
-	Button dnevi_sajenja;
 	Menu meni;
 	
 	public void onCreate(Bundle savedInstanceState) {
