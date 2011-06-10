@@ -9,11 +9,11 @@ public  class DatabaseHelper extends SQLiteOpenHelper
 {	
 
 	public static final  String TAG="DatabaseHelper";
-	private static final int DATABASE_VERSION = 2;
-	private static final String DATABASE_NAME = "mojtest";
+	private static final int DATABASE_VERSION = 4;
+	private static final String DATABASE_NAME = "Sajenje";
 	private static final String DATABASE_CREATE =
 		"create table "+DBAdapterSajenja.TABLE+" ("+DBAdapterSajenja._ID+" integer primary key autoincrement, "
-		+ DBAdapterSajenja.NAME+" TEXT not null);";
+		+ DBAdapterSajenja.NAME+" TEXT not null," + DBAdapterSajenja.DNEVI+" TEXT);";
 
 	DatabaseHelper(Context context) 
 	{

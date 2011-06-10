@@ -9,7 +9,7 @@
 		<item>Sobota</item>
 		<item>Nedelja</item>
 	</string-array>
-	<string-array name="dnevi_zalivanaValues">
+	<string-array name="dnevi_zalivanjaValues">
 		<item>11</item>
 		<item>22</item>
 		<item>33</item>

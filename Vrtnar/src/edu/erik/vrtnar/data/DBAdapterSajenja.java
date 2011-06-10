@@ -9,15 +9,15 @@ import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 
 public class DBAdapterSajenja implements BaseColumns {
-	public static final  String TAG="DBAdapterStevec";
-
-	public static final  String VALUE = "i_value";
+	public static final  String TAG="DBAdapterSajenje";
 	public static final  String NAME = "s_name";
-	public static final  int POS__ID=6;
-	public static final  int POS_NAME=7;
+	public static final  String DNEVI = "s_dnevi";
+	public static final  int POS__ID=0;
+	public static final  int POS_NAME=1;
+	public static final  int POS_DNEVI=2;
 	//public static final  int POS_VALUE=8;
 
-	public static final  String TABLE="stevec";
+	public static final  String TABLE="tsajenje";
 
 
 
@@ -47,11 +47,11 @@ public class DBAdapterSajenja implements BaseColumns {
 	}
 
 	//---insert a stevec
-	public long insertStevc(Sajenja stevec) 
+	public long insertSajenje(Sajenja rastlina) 
 	{
 		ContentValues initialValues = new ContentValues();
-		initialValues.put(NAME, stevec.getName()); 
-		//initialValues.put(VALUE, stevec.getPovecaj()); 
+		initialValues.put(NAME, rastlina.getName()); 
+		initialValues.put(DNEVI, rastlina.getDnevi()); 
 		return db.insert(TABLE, null, initialValues);
 	}
 
@@ -67,8 +67,7 @@ public class DBAdapterSajenja implements BaseColumns {
 		return db.query(TABLE, new String[] {
 				_ID,       //POS__ID=0;
 				NAME,      //POS_NAME=1
-				//value
-				},    //POS_VALUE =2
+				DNEVI},    //POS_VALUE =2
 				null, 
 				null, 
 				null, 
@@ -83,7 +82,7 @@ public class DBAdapterSajenja implements BaseColumns {
 			db.query(true, TABLE, new String[] {
 					_ID, 
 					NAME,
-					VALUE}, 
+					DNEVI}, 
 					_ID + "=" + rowId, 
 					null,
 					null, 

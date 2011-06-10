@@ -23,10 +23,8 @@ public class vrtnar extends Activity implements OnClickListener {
 	ImageView vreme;
 	Menu meni;
 	private static final int TEST_START_ACTIVITY_ID = 1;
-	private static final int OPEN_DNEVI_ZALIVANJA = 2;
-	
-	
-	
+	private static final int OPEN_DNEVI_ZALIVANJA = 10;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -62,14 +60,14 @@ public class vrtnar extends Activity implements OnClickListener {
 	public void onClick(View arg0) {
 
 		if (arg0.getId()== R.id.btn_dodaj ){
-			Intent moj=new Intent(this,Dodaj_Okno.class);
+			Intent moj=new Intent(this,SajenjeActivity.class);
 			//this.startActivity(moj);
 			this.startActivityForResult(moj, TEST_START_ACTIVITY_ID);
 		}
 		if (arg0.getId()== R.id.btn_dzalivanja ){
 		Intent i = new Intent();
 		i.setClass(this, DneviTeden.class);
-		startActivityForResult(i, OPEN_DNEVI_ZALIVANJA);
+		this.startActivityForResult(i, OPEN_DNEVI_ZALIVANJA);
 		}
 	}
 	
@@ -89,7 +87,7 @@ public class vrtnar extends Activity implements OnClickListener {
 					 izbrani +="SRE "; 
 				 }
 				 if (data.getBooleanExtra(DneviZalivanja.zCET, false)) { //neki naredis
-					 izbrani +="ČET"; 
+					 izbrani +="ČET "; 
 				 }
 				 if (data.getBooleanExtra(DneviZalivanja.zPET, false)) { //neki naredis
 					 izbrani +="PET "; 
@@ -123,8 +121,6 @@ public class vrtnar extends Activity implements OnClickListener {
 			i.setClass(this, MenuPreferences.class);
 			startActivityForResult(i, R.id.btn_dzalivanja);
 			return true;
-			
-		
 		default:// Generic catch all for all the other menu resources
 			if (!item.hasSubMenu()) {
 				Toast.makeText(this, item.getTitle(), Toast.LENGTH_SHORT)
@@ -133,9 +129,7 @@ public class vrtnar extends Activity implements OnClickListener {
 			}
 			break;
 		}
-
 		return false;
 	}
-
 
 }

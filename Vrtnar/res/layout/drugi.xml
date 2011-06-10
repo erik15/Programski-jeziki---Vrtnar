@@ -23,12 +23,17 @@
     <LinearLayout 
     android:id="@+id/linearLayout2" 
     android:layout_width="match_parent" 
-    android:layout_height="wrap_content" android:gravity="center">
-        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Vnesi sajenje..." android:id="@+id/edit_vnos"></EditText>
+    android:gravity="center" android:layout_height="wrap_content">
+        <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Izberi sajenje, ali pa dodaj novo!" android:textSize="15px" android:textColor="@color/red"></TextView>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:id="@+id/linearLayout5"></LinearLayout>
     </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+        <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/spinnerSajenja"></Spinner>
+    </LinearLayout>
+    <EditText android:layout_width="match_parent" android:id="@+id/edit_vnos" android:text="Vnesi sajenje..." android:layout_height="wrap_content"></EditText>
     <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena" android:text="Določi dan" android:id="@+id/btn_dsajenja"></Button>
     
-    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="160px">
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="100px">
         <Button android:background="@drawable/gumb" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena" android:text="Shrani nastavitve" android:id="@+id/btn_shrani_sajenje"></Button>
     </LinearLayout>
     <LinearLayout android:id="@+id/linearLayout7" android:layout_width="wrap_content" android:layout_height="match_parent"></LinearLayout>
