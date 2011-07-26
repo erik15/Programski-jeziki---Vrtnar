@@ -27,7 +27,7 @@ public class SajenjeArrayAdapter extends ArrayAdapter<Sajenja> { //Step 4.8 POPR
 			// Creates a ViewHolder and store references to the two children views
 			// we want to bind data to.
 			holder = new ViewHolder();
-			//holder.one = (TextView) convertView.findViewById(R.id.tvOne); //Step 4.8 POPRAVI
+			holder.one = (TextView) convertView.findViewById(R.id.tvOne); //Step 4.8 POPRAVI
 			// holder.icon = (ImageView) convertView.findViewById(R.id.icon);
 			holder.two = (TextView) convertView.findViewById(R.id.tvTwo); //Step 4.8 POPRAVI		
 			//holder.tri = (TextView) convertView.findViewById(R.id.tvTri); //Step 4.8 POPRAVI
@@ -38,7 +38,7 @@ public class SajenjeArrayAdapter extends ArrayAdapter<Sajenja> { //Step 4.8 POPR
 			holder = (ViewHolder) convertView.getTag();
 		}
 		// Bind the data efficiently with the holder.
-		//holder.one.setText(""+tmp.getPovecaj()); //Step 4.8 POPRAVI
+		holder.one.setText(""+tmp.getDnevi()); //Step 4.8 POPRAVI
 		holder.two.setText(tmp.getName()); //Step 4.8 POPRAVI
 		//holder.icon.setImageBitmap((position & 1) == 1 ? mIcon1 : mIcon2);
 		return convertView;
@@ -46,5 +46,6 @@ public class SajenjeArrayAdapter extends ArrayAdapter<Sajenja> { //Step 4.8 POPR
 	static class ViewHolder {
 		//TextView one; //Step 4.8 POPRAVI
 		TextView two; //Step 4.8 POPRAVI
+		TextView one;
 	}
 }

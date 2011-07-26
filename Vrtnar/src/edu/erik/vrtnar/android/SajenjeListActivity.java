@@ -17,7 +17,7 @@ public class SajenjeListActivity extends ListActivity implements OnItemClickList
 		app = (ApplicationExample) getApplication();
 		setListAdapter(app.stevci);
 		this.getListView().setOnItemClickListener(this);
-		app.lista.clear();
+		//app.lista.clear();
 		app.fillFromDB();
 
 	}

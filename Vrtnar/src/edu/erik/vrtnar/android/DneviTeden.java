@@ -1,5 +1,7 @@
 package edu.erik.vrtnar.android;
 
+import java.util.Calendar;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -48,6 +50,9 @@ public class DneviTeden extends Activity implements OnClickListener {
         cbSob = (CheckBox)  findViewById(R.id.cb_dsajenja_sob);
         cbNed = (CheckBox)  findViewById(R.id.cb_dsajenja_ned);
         shrani = (Button) findViewById(R.id.btn_shrani);
+        
+        Calendar koledar = Calendar.getInstance();
+        cbPon.setText(getDan(koledar.get(Calendar.DAY_OF_WEEK))+" "+Calendar.DAY_OF_MONTH+"."+Calendar.MONTH+"."+Calendar.YEAR);
         /*for (int i=0; i< a.length; i++) {
         	if (a[i].equals(sPON))cbPon.setChecked(true);
         	if (a[i].equals(sTOR))cbTor.setChecked(true);
@@ -59,6 +64,14 @@ public class DneviTeden extends Activity implements OnClickListener {
         }*/
        shrani.setOnClickListener(this);
       
+	}
+
+	private String getDan(int i) {
+		if(i==Calendar.MONDAY)
+			return "Ponedeljek";
+		else if(i==Calendar.WEDNESDAY)
+			return "Sreda";
+		return "Nedelja";
 	}
 
 	@Override
