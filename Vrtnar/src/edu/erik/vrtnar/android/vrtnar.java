@@ -48,7 +48,7 @@ public class vrtnar extends Activity implements OnClickListener {
 		vreme.setImageDrawable(drawable);
         danes = (TextView)findViewById(R.id.txt_danes);
         jutri = (TextView)findViewById(R.id.txt_jutri);
-        
+        app = (ApplicationExample) getApplication(); //Step 4.4
         //if(s.getDnevi()=="TOR")
         //{
         	//jutri.setText("DAN:"+s.getDnevi()); 
@@ -77,20 +77,18 @@ public class vrtnar extends Activity implements OnClickListener {
 	}
 	
 //ko kliknemo se nam odpre novo okno za dodajanje sajenja, hkrat pa določamo lahko dneve zalivanja
-	@Override
 	public void onClick(View arg0) {
 
 		if (arg0.getId()== R.id.btn_dodaj ){
-			//Intent i=new Intent(this,SajenjeActivity.class);
+			Intent moj=new Intent();
+			moj.setClass(this,SajenjeActivity.class);
 			//this.startActivity(moj);
-			Intent i = new Intent();
-			i.setClass(this, SajenjeActivity.class);
-			this.startActivityForResult(i, TEST_START_ACTIVITY_ID);
+			this.startActivityForResult(moj, TEST_START_ACTIVITY_ID);
 		}
 		if (arg0.getId()== R.id.btn_dzalivanja ){
-		Intent i = new Intent();
-		i.setClass(this, DneviTeden.class);
-		this.startActivityForResult(i, OPEN_DNEVI_ZALIVANJA);
+			Intent i = new Intent();
+			i.setClass(this, DneviTeden.class);
+			this.startActivityForResult(i, OPEN_DNEVI_ZALIVANJA);
 		}
 		if (arg0.getId()== R.id.btn_obeti ){
 			Intent i = new Intent();
@@ -105,6 +103,7 @@ public class vrtnar extends Activity implements OnClickListener {
 
 		if (resultCode==RESULT_OK) {
 			 if (requestCode==OPEN_DNEVI_ZALIVANJA) {
+				 
 				 String izbrani="";
 				 if (data.getBooleanExtra(DneviZalivanja.zPON, false)) { //neki naredis
 					 izbrani +="PON "; 

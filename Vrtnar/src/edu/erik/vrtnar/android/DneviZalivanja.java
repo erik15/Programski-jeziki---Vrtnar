@@ -4,13 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Toast;
 
 public class DneviZalivanja extends Activity implements OnClickListener {
 	public static final String zPON="PON";
@@ -46,7 +43,6 @@ public class DneviZalivanja extends Activity implements OnClickListener {
       
 	}
 
-	@Override
 	public void onClick(View v) {
 		Intent intent = new Intent();
 		intent.putExtra(zPON, cbPon.isChecked()); //shrani vrednosti v intent

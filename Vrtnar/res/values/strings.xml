@@ -6,12 +6,12 @@
 	<color name="red">#C11B17</color>
 	<string name="dnevi_sajenja">Dnevi v tednu</string>
 	<string name="dnevi_zalivanja">Dnevi v tednu</string>
-	<string name="Ponedeljek">Ponedeljek</string>
-	<string name="Torek">Torek</string>
-	<string name="Sreda">Sreda</string>
-	<string name="Četrtek">Četrtek</string>
-	<string name="Petek">Petek</string>
-	<string name="Sobota">Sobota</string>
-	<string name="Nedelja">Nedelja</string>
+	<string name="Monday">Ponedeljek</string>
+	<string name="Tuesday">Torek</string>
+	<string name="Wednesday">Sreda</string>
+	<string name="Thursday">Četrtek</string>
+	<string name="Friday">Petek</string>
+	<string name="Saturday">Sobota</string>
+	<string name="Sunday">Nedelja</string>
 	<string name="obeti_txt">Obeti</string>
 </resources>
