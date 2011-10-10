@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:src="@drawable/ozadje"
+    android:background="@drawable/ozadje">
+    
+    <LinearLayout 
+    android:id="@+id/linearLayout1" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" android:gravity="center">
+        <TextView 
+        android:textColor="@color/zelena" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/textView1" 
+        android:textStyle="bold"
+        android:textSize="25px" android:typeface="sans" android:background="@drawable/vrtnar"></TextView>
+    </LinearLayout>
+    
+        
+    <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="match_parent" android:text="Napoved za Slovenijo" android:textColor="@color/red" android:textSize="24px"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingTop="10px" android:paddingBottom="10px" android:id="@+id/txvTime" android:text="Napaka" android:textColor="@color/zelena" android:textSize="16px"></TextView>
+<TextView  
+    android:layout_height="wrap_content" 
+    android:id="@+id/txvObeti" android:layout_width="match_parent" android:text="Ni bilo možno vzpostaviti povezave. Preverite nastavitve povezave in poiskusite znova." android:textColor="@color/zelena" android:textSize="14px"/>
+	<LinearLayout android:id="@+id/linearLayout3"
+		android:layout_width="match_parent" android:layout_gravity="bottom" android:gravity="bottom" android:layout_height="fill_parent">
+		<Button android:background="@drawable/gumb"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:textSize="15px" android:textStyle="bold" android:textColor="@color/zelena"
+			android:layout_gravity="bottom" android:text="Nazaj" android:id="@+id/btn_nazaj"></Button>
+	</LinearLayout>
+</LinearLayout>
